@@ -4,5 +4,6 @@
 (http://jmetal.sourceforge.net).
 
 Features:
-* HTML 5 compliant
+* HTML5 
+* CSS3
 
