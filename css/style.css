@@ -68,12 +68,7 @@ a {
 img.float_right {
     float: right;
     margin: 5px 0 10px 20px;
-    /*
-    border-bottom: 2px solid #555;
-    border-left: 1px solid #999;
-    border-top: 1px solid #999;
-    border-right: 2px solid #555;
-    */
+
 }
 
 img.float_right:hover {
