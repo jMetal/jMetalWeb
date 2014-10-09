@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>jMetal Web site</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+
+		<header id="header">
+			<h1 id="logo"><a href="index.html" title="index"><img src="images/jMetalLogo.png" alt="jMetal Logo" /></a></h1>
+			<p>
+				A Framework for Multi-Objective Optimization
+			</p>
+		</header>
+
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="algorithms.html">Algorithms</a>
+				</li>
+				<li>
+					<a href="problems.html">Problems</a>
+				<li>
+					<a href="resources.html">Resources</a>
+				</li>
+				<li>
+					<a href="smpso.html" id="active">Our Techniques <span>&#9660</span></a>
+					<ul>
+						<li>
+							<a href="smpso.html">SMPSO</a>
+						</li>
+						<li>
+							<a href="abyss.html">AbYSS</a>
+						</li>
+						<li>
+							<a href="mocell.html">MOCell</a>
+						</li>
+						<li>
+							<a href="mochc.html">MOCHC</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+		<article class="columms_container">
+			<header id="articleHeader">
+				<h1><strong>SMPSO</strong> Speed-constrained Multiobjective PSO</h1>
+			</header>
+
+			<!--<hr>-->
+
+			<aside>
+				<header>
+
+				</header>
+				
+				<section>
+					<h2 class=invert>Pseudo-code</h2>
+					<br />
+          <img src="resources/smpso_code.png" alt="smpso pseudocode"  class="asideImage">
+				</section>
+				<hr>
+				<section>
+					<h2 class=invert>Swarm explosion control in SMPSO</h2>
+					<br />
+          <img src="./resources/smpso.png" alt="smpso"  class="asideImage">
+          <img src="./resources/omopso.png" alt="omopso"  class="asideImage">
+				</section>
+				<hr>
+				<section>
+					<h2 class=invert>News</h2>
+					<b>1st June 2013</b>
+					<br />
+					The new jMetal Web site is up
+					<hr>
+					<b>May 2013 </b>
+					<br />
+					Working in a new Web site
+				</section>
+			</aside>
+
+			<section class="col2_3">
+				<header>
+					<h1>Description</h1>
+				</header>
+				<p>
+					<strong>SMPSO</strong> (Speed constrained Multi-objective PSO) is a metaheuristic based on the OMOPSO algorithm (<a href="references/RC05.bib">BIBTEX</a>)
+					that was designed to cope with difficulties of this technique when solving multi-modal problems. The SMPSO approach is to apply a <strong>constraint 
+					velocity scheme</strong> to control the so-called <strong>swarm explosion</strong>.
+				</p>
+
+				<header>
+					<h1>Main features</h1>
+				</header>
+				<ul>
+					<li>
+						Velocity constriction mechanism
+					</li>
+					<li>
+						External archive to store the non-dominated solutions
+						(leaders)
+					</li>
+					<ul>
+						<li>
+							Density estimator: crowding distance
+						</li> </li>
+					</ul>
+					<li>
+						Leader selection: binary tournament from the leaders archive taking into account the crowding distance
+					</li>
+					<li>
+						Mutation (turbulence) operator: polynomial mutation
+					</li>
+
+				</ul>
+				<header>
+					<h1>Variants</h1>
+				</header>
+				<p>
+					The SMPSOhv variant, presented in CEC 2013, has the following features:
+					<ul>
+						<li>
+							Density estimator: hypervolume contribution
+						</li>
+						<li>
+							Leader selection: binary tournament from the leaders archive taking into account the hypervolume contribution
+						</li>
+
+					</ul>
+
+				</p>
+				<header>
+					<h1>References</h1>
+				</header>
+					<ul>
+						<li>
+							A.J. Nebro, J.J. Durillo, J. García-Nieto, C.A. Coello Coello, F. Luna and E. Alba. <a href="resources/MCDM2009.pdf">SMPSO: A New PSO-based Metaheuristic for Multi-objective Optimization.</a> 
+							IEEE Symposium on Computational Intelligence in Multicriteria Decision-Making (MCDM 2009), pp: 66-73. March 2009. <a href="references/MCDM2009.bib">BIBTEX</a>
+						</li>
+						<li>
+							J.J. Durillo, J. García-Nieto, A.J. Nebro, C.A. Coello Coello, F. Luna and E. Alba. <a href="resources/EMO2009a.pdf">Multi-Objective Particle Swarm Optimizers: An Experimental Comparison</a>.
+							5th International Conference, EMO 2009, pp: 495-509. April 2009. <a href="references/EMO2009a.bib">BIBTEX</a></li>
+						<li>
+							J.J. Durillo, A.J. Nebro, C.A. Coello Coello, J. García-Nieto, F. Luna, E. Alba. A Study of Multi-Objective Metaheuristics when Solving Parameter Scalable Problems. 
+							IEEE Transactions on Evolutionary Computation. Vol. 14, No. 4 (August 2010), pp. 618-635. <a href="resources/DNC10.bib">BIBTEX</a> 
+							<a href="http://dx.doi.org/10.1109/TEVC.2009.2034647">DOI</a></li>
+					</ul>
+					</section>
+      <div class="clear"> </div>
+		</article>
+
+		<hr>
+
+		<footer id="license">
+			<h1>License</h1>
+			<p>
+				<a href="http://creativecommons.org/licenses/LGPL/2.1/"><img src="images/LPGL.png" width="100" alt="firefox" class="float-left" /></a>
+				This work is licensed under the <a href="http://creativecommons.org/licenses/LGPL/2.1/">Creative Commons GNU Lesser General Public License</a>
+			</p>
+
+			<hr>
+		</footer>
+
+		<!-- ... and so on ... -->
+	</body>
+</html>
+

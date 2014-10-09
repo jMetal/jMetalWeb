@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8" />
+   <title>jMetal Web site</title>
+   <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  		
+   <header id="header">
+   	 <h1 id="logo">
+	     <a href="index.html" title="index"><img src="images/jMetalLogo.png" alt="jMetal Logo" /></a>
+	   </h1>
+	   <p>A Framework for Multi-Objective Optimization</p>
+    </header>
+    
+    <nav id="inicio">
+      <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="algorithms.html">Algorithms</a>
+         </li>
+         <li><a href="problems.html" id="active">Problems</a>
+         <li><a href="resources.html">Resources</a></li>
+         <li><a href="#opiniones">Our Techniques <span>&#9660;</span></a>
+         	   <ul>
+				          <li><a href="smpso.html">SMPSO</a></li>
+				          <li><a href="abyss.html">AbYSS</a></li>
+				          <li><a href="mocell.html">MOCell</a></li>
+				          <li><a href="mochc.html">MOCHC</a></li>
+				          <li><a href="nsgaII.html">NSGA-II variants</a></li>
+			       </ul>
+         </li>
+      </ul>
+   </nav>
+
+   <article class="columms_container">
+      <header id="articleHeader">
+      	<h1>Problems included in <strong>jMetal</strong></h1>
+      </header>
+      
+      <!--<hr>-->
+
+      <section class="col2_3">
+         <header><h1>Problem families</h1></header>
+
+        <section>
+        	<header>
+        	<h2>ZDT benchmark</h2>        		
+        	</header>
+        	<ul>
+        		<li><strong> Number of problems:</strong> 6 (ZDT1 - ZDT6)</li>
+        		<li><strong>Reference:</strong> Zitzler, E., Deb, K., Thieler, L. Comparison of multiobjective evolutionary algorithms: Empirical results. IEEE Trans. on Evol. Computation 8 (2000) 173-195. Zitzler, E., Deb, K., Thieler, L. 
+        			Comparison of multiobjective evolutionary algorithms: Empirical results. IEEE Trans. on Evol. Computation 8 (2000) 173-195.
+        			</li>
+        			<li><strong>Reference Pareto fronts: </strong> <a href="paretoFronts/ZDT.tar.gz">ZDT.tar.gz</a></li>
+        	</ul>
+        </section>
+        <section>
+        	<header>
+        	<h2>DTLZ benchmark</h2>        		
+        	</header>
+        	<ul>
+        		<li><strong> Number of problems:</strong> 7 (DTLZ1 - DTLZ7)</li>
+        		<li><strong>Reference:</strong> K. Deb, L. Thiele, M. Laumanns, and E. Zitzler. Scalable Test Problems for Evolutionary Multi-Objective Optimization, Zurich, Switzerland, Tech. Rep. 112, 2001.
+        			</li>
+        			<li><strong>Reference Pareto fronts (2D):</strong> <a href="paretoFronts/DTLZ.2D.tar.gz">DTLZ.2D.tar.gz</a></li>
+        			<li><strong>Reference Pareto fronts (3D):</strong> <a href="paretoFronts/DTLZ.3D.tar.gz">DTLZ.3D.tar.gz</a></li>
+        	</ul>
+        </section>
+        <section>
+        	<header>
+        	<h2>WFG benchmark</h2>        		
+        	</header>
+        	<ul>
+        		<li><strong> Number of problems:</strong> 9 (WFG1 - WFG9)</li>
+        		<li><strong>Reference:</strong> Simon Huband, Phil Hingston, Luigi Barone, and Lyndon While. A Review of Multi-objective Test Problems and a Scalable Test Problem Toolkit. IEEE Transactions on Evolutionary Computation, volume 10, no 5, pages 477-506. IEEE, October 2007
+        			</li>
+        			<li><strong>Reference Pareto fronts (2D):</strong>  <a href="paretoFronts/WFG.2D.tar.gz">WFG.2D.tar.gz</a></li>
+        			<li><strong>Reference Pareto fronts (3D):</strong>  <a href="paretoFronts/WFG.3D.tar.gz">WFG.3D.tar.gz</a></li>
+        	</ul>
+        </section>        
+        <section>
+        	<header>
+        	<h2>LZ09 benchmark</h2>        		
+        	</header>
+        	<ul>
+        		<li><strong> Number of problems:</strong> 9 (LZ09_F1 - LZ09_F9)</li>
+        		<li><strong>Reference:</strong> H. Li and Q. Zhang. Multiobjective Optimization Problems with Complicated Pareto Sets, MOEA/D and NSGA-II, IEEE Trans on Evolutionary Computation, 2(12):284-302, April 2009. 
+        			</li>
+        			<li><strong>Reference Pareto fronts:</strong>  <a href="paretoFronts/LZ09.tar.gz">LZ09.tar.gz</a></li>
+        	</ul>
+        </section>
+        <section>
+        	<header>
+        	<h2>CEC2009 competition benchmark (unconstrained problems)</h2>        		
+        	</header>
+        	<ul>
+        		<li><strong> Number of problems:</strong> 10 (UF1 - UF10)</li>
+        		<li><strong>Reference:</strong> Q. Zhang, A. Zhou, S. Zhao, P.N. Suganthan, W. Liu, S. Tiwari, Multiobjective 
+        			optimization test instances for the CEC 2009 special session and competition, 
+        			Tech. Rep. CES-487, University of Essex and Nanyang Technological University, 2008. 
+        			</li>
+        			<li><strong>Reference Pareto fronts:</strong>  <a href="paretoFronts/UF.tar.gz">UF.tar.gz</a></li>
+        	</ul>
+        </section>
+        
+        <header><h1>Combinatorial problems</h1></header>
+        <section>
+        	<header>
+        	<h2>Multi-objective Quadratic Assignment Problem (mQAP)</h2>        		
+        	</header>
+        	<ul>
+        	<li><a href="http://www.cs.man.ac.uk/~jknowles/mQAP/"> J. Knowles page</a></li>
+        	</ul>
+        	</section>
+
+        
+	     </section>
+	     
+      <section class="col3">
+         <header><h1>Unconstrained problems</h1></header>
+          <section>
+        	<header>
+        	<h2>Fonseca</h2>        		
+        	</header>
+        	<ul>
+        		<li><strong>Features:</strong> two objectives, 3 variables</li>
+        		<li><strong>Reference:</strong> BIBTEX.
+        			</li>
+        	  <li><strong>Reference Pareto front:</strong> <a href="paretoFronts/Fonseca.pf">Fonseca.pf</a></li>
+        	</ul>
+        </section>
+        <section>
+        	<header>
+        	<h2>Kursawe</h2>        		
+        	</header>
+        	<ul>
+        		<li><strong>Features:</strong> two objectives, N numbers of variables (default: N = 3)</li>
+        		<li><strong>Reference:</strong>  BIBTEX.
+        			</li>
+        	  <li><strong>Reference Pareto front:</strong> <a href="paretoFronts/Kursawe.pf">Kursawe.pf</a></li>
+        	</ul>
+        </section>
+         <section>
+        	<header>
+        	<h2>Schaffer</h2>        		
+        	</header>
+        	<ul>
+        		<li><strong>Features:</strong> two objectives, 1 variables</li>
+        		<li><strong>Reference:</strong> BIBTEX.
+        			</li>
+        	  <li><strong>Reference Pareto front:</strong> <a href="paretoFronts/Schaffer.pf">Schaffer.pf</a></li>
+        	</ul>
+        </section>
+         <section>
+        	<header>
+        	<h2>Viennet2</h2>        		
+        	</header>
+        	<ul>
+        		<li><strong>Features:</strong> 3 objectives, 2 variables</li>
+        		<li><strong>Reference:</strong> BIBTEX.
+        			</li>
+        	  <li><strong>Reference Pareto front:</strong> <a href="paretoFronts/Viennet2.pf">Viennet2.pf</a></li>
+        	</ul>
+        </section>
+         <section>
+        	<header>
+        	<h2>Viennet3</h2>        		
+        	</header>
+        	<ul>
+        		<li><strong>Features:</strong> 3 objectives, 2 variables</li>
+        		<li><strong>Reference:</strong> BIBTEX.
+        			</li>
+        	  <li><strong>Reference Pareto front:</strong> <a href="paretoFronts/Viennet3.pf">Viennet3.pf</a></li>
+        	</ul>
+        </section>
+        
+        <hr> 
+        
+        <section>
+         <header><h1>Constrained problems</h1></header>
+          <section>
+          	<header>
+          <h2>Binh2</h2>        		
+        	</header>
+        	<ul>
+        		<li><strong>Features:</strong> 2 objectives, 2 variables, 2 constraints</li>
+        		<li><strong>Reference:</strong> BIBTEX.
+        			</li>
+        	  <li><strong>Reference Pareto front:</strong> <a href="paretoFronts/Binh2.pf">Binh2.pf</a></li>
+        	</ul>
+         </section>
+          <section>
+          	<header>
+          <h2>Contr_Ex</h2>        		
+        	</header>
+        	<ul>
+        		<li><strong>Features:</strong> two objectives, 1 variable</li>
+        		<li><strong>Reference:</strong> BIBTEX.
+        			</li>
+        	  <li><strong>Reference Pareto front:</strong> <a href="paretoFronts/ConstrEx.pf">Constr_Ex.pf</a></li>
+        	</ul>
+         </section>
+          <section>
+          	<header>
+          <h2>Golinski</h2>        		
+        	</header>
+        	<ul>
+        		<li><strong>Features:</strong> 2 objectives, 7 variables , 11 constraints</li>
+        		<li><strong>Reference:</strong> BIBTEX.
+        			</li>
+        	  <li><strong>Reference Pareto front:</strong> <a href="paretoFronts/Golinski.pf">Golinski.pf</a></li>
+        	</ul>
+         </section>
+          <section>
+          	<header>
+          <h2>Ozyczka2</h2>        		
+        	</header>
+        	<ul>
+        		<li><strong>Features:</strong> 2 objectives, 6 variables, 6 constraints</li>
+        		<li><strong>Reference:</strong> BIBTEX.
+        			</li>
+        	  <li><strong>Reference Pareto front:</strong> <a href="paretoFronts/Osyczka2.pf">Osyczka2.pf</a></li>
+        	</ul>
+         </section>
+          <section>
+          	<header>
+          <h2>Tanaka</h2>        		
+        	</header>
+        	<ul>
+        		<li><strong>Features:</strong> 2 objectives, 2 variable, 2 constraints</li>
+        		<li><strong>Reference:</strong> BIBTEX.
+        			</li>
+        	  <li><strong>Reference Pareto front:</strong> <a href="paretoFronts/Tanaka.pf">Tanaka.pf</a></li>
+        	</ul>
+         </section>
+          <section>
+          	<header>
+          <h2>Srinivas</h2>        		
+        	</header>
+        	<ul>
+        		<li><strong>Features:</strong> two objectives, 1 variable</li>
+        		<li><strong>Reference:</strong> BIBTEX.
+        			</li>
+        	  <li><strong>Reference Pareto front:</strong> <a href="paretoFronts/Srinivas.pf">Srinivas.pf</a></li>
+        	</ul>
+         </section>
+          <section>
+          	<header>
+          <h2>Water</h2>        		
+        	</header>
+        	<ul>
+        		<li><strong>Features:</strong> 5 objectives, 1 variable</li>
+        		<li><strong>Reference:</strong> BIBTEX.
+        			</li>
+        	  <li><strong>Reference Pareto front:</strong> <a href="paretoFronts/Water.pf">Water.pf</a></li>
+        	</ul>
+         </section>
+
+	     </section>
+      </section>
+      <div class="clear"> </div>
+  </article>
+  
+   <hr>
+   
+		<footer>
+			<h1> </h1>
+			<div>
+								<!--	<a href="http://creativecommons.org/licenses/LGPL/2.1/"><img src="images/LPGL.png" width="100" alt="licencse" class="float-left" /></a>-->
+
+				<!--			This work is licensed under the <a href="http://creativecommons.org/licenses/LGPL/2.1/">Creative Commons GNU Lesser General Public License</a>		-->
+				<a href="http://validator.w3.org/check?uri=referer"><img class="float_left"
+				src="http://www.w3.org/Icons/valid-xhtml10"
+				alt="Valid XHTML 1.0 Transitional" height="30"  /></a>
+
+				<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3"> <img class="float_left" src="http://jigsaw.w3.org/css-validator/images/vcss"
+				alt="¡CSS Válido!" /> </a>
+
+				<!--© Copyright jMetal. All Rights Reserved-->
+				<a href="http://www.w3.org/html/logo/" target="_blank"> <img class="float_right" src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png"
+				alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics"> </a>
+				<!--
+				<a href="http://validator.w3.org/check?uri=referer"><img class="float_right"
+				src="http://www.w3.org/Icons/valid-xhtml10"
+				alt="Valid XHTML 1.0 Transitional" height="30"  /></a>
+
+				<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3"> <img class="float_right" src="http://jigsaw.w3.org/css-validator/images/vcss"
+				alt="¡CSS Válido!" /> </a>-->
+			</div>
+		</footer>
+	
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42147814-1']);
+  _gaq.push(['_setDomainName', 'sourceforge.net']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
+
+
+

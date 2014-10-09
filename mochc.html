@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8" />
+   <title>jMetal Web site</title>
+   <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  		
+   <header id="header">
+   	 <h1 id="logo">
+	     <a href="index.html" title="index"><img src="images/jMetalLogo.png" alt="jMetal Logo" /></a>
+	   </h1>
+	   <p>A Framework for Multi-Objective Optimization</p>
+    </header>
+    
+    <nav>
+      <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="algorithms.html">Algorithms</a>
+         </li>
+         <li><a href="problems.html">Problems</a>
+         <li><a href="resources.html">Resources</a></li>
+         <li><a href="smpso.html" id="active">Our Techniques <span>&#9660;</span></a>
+         	   <ul>
+				          <li><a href="smpso.html">SMPSO</a></li>
+				          <li><a href="abyss.html">AbYSS</a></li>
+				          <li><a href="mocell.html">MOCell</a></li>
+				          <li><a href="mochc.html">MOCHC</a></li>
+				          <li><a href="nsgaII.html">NSGA-II variants</a></li>
+			       </ul>
+         </li>
+      </ul>
+   </nav>
+
+   <article class="columms_container">
+      <header id="articleHeader">
+      	<h1><strong>MOCHC</strong> MultiObjective CHC</h1>
+      </header>
+      
+      <!--<hr>-->
+
+      <aside>
+      	<header>
+      		
+      	</header>
+				<section>
+					<h2 class=invert>CHC Pseudo-code</h2>
+					<br />
+					<img src="resources/CHCCode.png" alt="CHC pseudocode"  class="asideImage expand">
+				</section>
+      </aside>
+
+      <section class="col2_3">
+         <header><h1>Description</h1></header>
+		    <p>
+					<strong>MOCHC</strong> is a multi-objective version of <strong>CHC</strong>, an evolutionary algorithm proposed by Eshelman in 1991. It is intended to 
+					solve binary-coded problems and its main feature is the use of a crossover mechanism called HUX.
+					</p>
+					
+				<header>
+					<h1>Main features</h1>
+				</header>
+				<ul>
+					<li>
+						Ordering criterion: randking and crowding distance
+					</li>
+					<li>
+						Parent selection: random with incest threshold
+					</li>
+					<li>
+						Crossover: HUX
+					</li>
+					<li>
+						Cataclismic mutation: bit flip (pm = 35%)
+					</li>
+				</ul>
+				
+				<header>
+					<h1>Application</h1>
+				</header>
+				<p>MOCHC was designed to solve the antennae placement, a problem from the telecommunications domain</p>
+
+				
+				<header>
+					<h1>References</h1>
+				</header>
+				<ul>
+					<li>
+						A.J. Nebro, E. Alba, G. Molina, F. Chicano, F. Luna, J.J. Durillo Optimal antenna placement using a new multi-objective chc algorithm. 
+						GECCO '07: Proceedings of the 9th annual conference on Genetic and evolutionary computation. London, England. July 2007 .
+						<a href="resources/NAM07.bib">BIBTEX</a>
+					</li>
+				</ul>
+			</section>
+
+      <div class="clear"> </div>
+   </article>
+   
+   <hr>
+   
+		<footer>
+			<h1> </h1>
+			<div>
+								<!--	<a href="http://creativecommons.org/licenses/LGPL/2.1/"><img src="images/LPGL.png" width="100" alt="licencse" class="float-left" /></a>-->
+
+				<!--			This work is licensed under the <a href="http://creativecommons.org/licenses/LGPL/2.1/">Creative Commons GNU Lesser General Public License</a>		-->
+				<a href="http://validator.w3.org/check?uri=referer"><img class="float_left"
+				src="http://www.w3.org/Icons/valid-xhtml10"
+				alt="Valid XHTML 1.0 Transitional" height="30"  /></a>
+
+				<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3"> <img class="float_left" src="http://jigsaw.w3.org/css-validator/images/vcss"
+				alt="¡CSS Válido!" /> </a>
+
+				<!--© Copyright jMetal. All Rights Reserved-->
+				<a href="http://www.w3.org/html/logo/" target="_blank"> <img class="float_right" src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png"
+				alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics"> </a>
+				<!--
+				<a href="http://validator.w3.org/check?uri=referer"><img class="float_right"
+				src="http://www.w3.org/Icons/valid-xhtml10"
+				alt="Valid XHTML 1.0 Transitional" height="30"  /></a>
+
+				<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3"> <img class="float_right" src="http://jigsaw.w3.org/css-validator/images/vcss"
+				alt="¡CSS Válido!" /> </a>-->
+			</div>
+		</footer>
+	
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42147814-1']);
+  _gaq.push(['_setDomainName', 'sourceforge.net']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
+
+
+

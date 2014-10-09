@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>jMetal Web site</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+
+		<header id="header">
+			<h1 id="logo"><a href="index.html" title="index"><img src="images/jMetalLogo.png" alt="jMetal Logo" /></a></h1>
+			<p>
+				A Framework for Multi-Objective Optimization
+			</p>
+		</header>
+
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="algorithms.html">Algorithms</a>
+				</li>
+				<li>
+					<a href="problems.html">Problems</a>
+				<li>
+					<a href="resources.html">Resources</a>
+				</li>
+				<li>
+					<a href="smpso.html" id="active">Our Techniques <span>&#9660;</span></a>
+					<ul>
+						<li>
+							<a href="smpso.html">SMPSO</a>
+						</li>
+						<li>
+							<a href="abyss.html">AbYSS</a>
+						</li>
+						<li>
+							<a href="mocell.html">MOCell</a>
+						</li>
+						<li>
+							<a href="mochc.html">MOCHC</a>
+						</li>
+				          <li><a href="nsgaII.html">NSGA-II variants</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+		<article class="columms_container">
+			<header id="articleHeader">
+				<h1><strong>MOCell</strong></h1>
+			</header>
+
+			<!--<hr>-->
+
+			<aside>
+				<header>
+
+				</header>
+
+				<section>
+					<h2 class=invert>Neigborhoods in a cGA</h2>
+					<br />
+					<p>
+						Main feature of a cGA: solution diffusion through neigborhood overlapping
+					</p>
+					<img src="resources/cGA.png" alt="cGA"  class="asideImage">
+					<h2 class=invert>Reproduction steps in a cGA</h2>
+					<br />
+
+					<p>
+						For each cell, the seleccion of parents is contrained to the cell's neigborhood
+					</p>
+					<img src="resources/cGABreedingLoop.png" alt="cGA Breeding Loop"  class="asideImage">
+
+					<h2 class=invert>Pseudocode of a cGA</h2>
+					<br />
+					<img src="resources/cGACode.png" alt="cGA Breeding Loop"  class="asideImage expand">
+
+					<h2 class=invert>Pseudocode of MOCell</h2>
+					<br />
+					<img src="resources/MOCEllCode.png" alt="cGA Breeding Loop"  class="asideImage expand">
+				</section>
+			</aside>
+
+			<section class="col2_3">
+				<header>
+					<h1>Description</h1>
+				</header>
+				<p>
+					<strong>MOCell</strong> (MultiObjective Cellular genetic algorithm) is a family of cellular genetic algorithms (cGAs) for
+					multi-objective optimization which are the result of combining different strategies (synchronous vs asynchronous and two archive
+					feedback schemes).
+				</p>
+
+				<header>
+					<h1>Main features</h1>
+				</header>
+				<ul>
+					<li>
+						Adaptation of the canonical cGA scheme to deal with multi-objective problems
+					</li>
+					<li>
+						External archive to store the non-dominated solutions
+					<ul>
+						<li>
+							Density estimator: crowding distance
+						</li>
+						<li>
+							Feedback: the solutions of the archive are used to enhance the search
+						</li>
+					</ul>
+					</li>
+					<!--
+					<li>
+					Synchronous cGA: similar to the concept of generational genetic algorithm
+					</li> -->
+					<li>
+						Neighbohood: 1 hop neighbours (8 surrounding solutions)
+					</li>
+					<li>
+						Operators: SBX crossover and polynomial mutation
+					</li>
+				</ul>
+				<header>
+					<h1>Configurations</h1>
+				</header>
+				<p>
+					Six configurations of MOCell have been proposed:
+				</p>
+				<ul>
+					<li>
+						sMOCell1: the original synchronous MOCell algorithm
+					</li>
+					<li>
+						sMOCell2: MOCell + archive feedback through parent
+						selection
+					</li>
+					<li>
+						aMOCell1: asynchronous MOCell
+					</li>
+					<li>
+						aMOCell2: aMOCell1 + archive feedback through parent
+						selection
+					</li>
+					<li>
+						aMOCell3: aMOCell1 + replacing the worst neighbor
+					</li>
+					<li>
+						aMOCell4: Combination of aMOCell2 and aMOCell3
+					</li>
+				</ul>
+				<p>
+					In PPSN 2009 we presented a variant of aMOCell3, named CellDE, which replaced the
+					SBX crossover and polynomial mutation by the differential evolution operators
+				</p>
+				
+				<header><h1>MOCell steps</h1></header>
+				<p>
+         <img src="resources/MOCell.png" alt="MOCell" class="col23">	
+         </p>
+			</section>
+
+
+			<section class="col1">
+
+				<header>
+					<h1>References</h1>
+				</header>
+				<ul>
+					<li>
+						A.J. Nebro, J.J. Durillo, F. Luna, B. Dorronsoro, E. Alba. MOCell:
+						A Cellular Genetic Algorithm for Multiobjective Optimization.
+						International Journal of Intelligent Systems. Vol.24, No. 7 (July 2009), pp. 726-746.
+						<a href="http://dx.doi.org/10.1002/int.20358">DOI</a>
+						<a href="resources/NDL09.bib">BIBTEX</a>
+					</li>
+					<li>
+						A.J. Nebro, J.J. Durillo, F. Luna, B. Dorronsoro, E. Alba Design Issues in a Multiobjective Cellular Genetic Algorithm.
+						Evolutionary Multi-Criterion Optimization. 4th International Conference, EMO 2007. Sendai/Matsushima, Japan, March 2007.
+						<a href="resources/NDL07.bib">BIBTEX</a>
+					</li>
+					<li>
+						J.J. Durillo, A.J. Nebro, F. Luna, E. Alba Solving Three-Objective Optimization Problems Using a new Hybrid Cellular Genetic Algorithm.
+						PPSN X. LNCS, Vol. Volume 5199/2008, pp: 661-670. Dortmund, September 2008.
+						<a href="http://dx.doi.org/10.1007/978-3-540-87700-4_66">DOI</a>
+						<a href="http://www.lcc.uma.es/~antonio/investigacion/articulos/DNL08.bib">BIBTEX</a>
+					</li>
+				</ul>
+			</section>
+			<div class="clear"> </div>
+		</article>
+
+		<hr>
+
+		<footer>
+			<h1> </h1>
+			<div>
+				<!--	<a href="http://creativecommons.org/licenses/LGPL/2.1/"><img src="images/LPGL.png" width="100" alt="licencse" class="float-left" /></a>-->
+
+				<!--			This work is licensed under the <a href="http://creativecommons.org/licenses/LGPL/2.1/">Creative Commons GNU Lesser General Public License</a>		-->
+				<a href="http://validator.w3.org/check?uri=referer"><img class="float_left"
+				src="http://www.w3.org/Icons/valid-xhtml10"
+				alt="Valid XHTML 1.0 Transitional" height="30"  /></a>
+
+				<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3"> <img class="float_left" src="http://jigsaw.w3.org/css-validator/images/vcss"
+				alt="¡CSS Válido!" /> </a>
+
+				<!--© Copyright jMetal. All Rights Reserved-->
+				<a href="http://www.w3.org/html/logo/" target="_blank"> <img class="float_right" src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png"
+				alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics"> </a>
+				<!--
+				<a href="http://validator.w3.org/check?uri=referer"><img class="float_right"
+				src="http://www.w3.org/Icons/valid-xhtml10"
+				alt="Valid XHTML 1.0 Transitional" height="30"  /></a>
+
+				<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3"> <img class="float_right" src="http://jigsaw.w3.org/css-validator/images/vcss"
+				alt="¡CSS Válido!" /> </a>-->
+			</div>
+		</footer>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42147814-1']);
+  _gaq.push(['_setDomainName', 'sourceforge.net']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	</body>
+</html>
+

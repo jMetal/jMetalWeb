@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8" />
+   <title>jMetal Web site</title>
+   <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  		
+   <header id="header">
+   	 <h1 id="logo">
+	     <a href="index.html" title="index"><img src="images/jMetalLogo.png" alt="jMetal Logo" /></a>
+	   </h1>
+	   <p>A Framework for Multi-Objective Optimization</p>
+    </header>
+    
+    <nav id="inicio">
+      <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="algorithms.html" id="active">Algorithms</a>
+         </li>
+         <li><a href="problems.html">Problems</a>
+         <li><a href="resources.html">Resources</a></li>
+         <li><a href="#opiniones">Our Techniques <span>&#9660;</span></a>
+         	   <ul>
+				          <li><a href="smpso.html">SMPSO</a></li>
+				          <li><a href="abyss.html">AbYSS</a></li>
+				          <li><a href="mocell.html">MOCell</a></li>
+				          <li><a href="mochc.html">MOCHC</a></li>
+				          <li><a href="nsgaII.html">NSGA-II variants</a></li>
+			       </ul>
+         </li>
+      </ul>
+   </nav>
+
+   <article class="columms_container">
+      <header id="articleHeader">
+      	<h1>Metaheuristics included in <strong>jMetal</strong></h1>
+      </header>
+      
+      <!--<hr>-->
+
+      <section class="col1">
+         <header><h1>Multi-objective algorithms</h1></header>
+
+				<div>
+					<table class="fullTable">
+						<tr>
+						<th>Algorithm</th>
+						<th>Package</th>
+						<th>Class</th>
+						<th>Algorithm Type</th>
+						<th>Ref (bibtex)</th>
+						</tr>
+				<tr>
+					<td>AbYSS</td>
+					<td>jmetal.metaheuristics.abyss</td>
+					<td>AbYSS.java</td>
+					<td>Hybrid: scatter search + genetic operators</td>
+					<td><a href="references/NLA08.bib">NLA08.bib</a></td>
+				</tr>
+				<tr>
+					<td>CellDE</td>
+					<td>jmetal.metaheuristics.cellde</td>
+					<td>CellDE.java</td>
+					<td>Hybrid: cellular genetic algorithm + differential evolution</td>
+					<td><a href="references/DNL08.bib">DNL08.bib</a></td>
+				</tr>
+				<tr>
+					<td>dMPOSO</td>
+					<td>jmetal.metaheuristics.dmopso</td>
+					<td>dMOPSO.java</td>
+					<td>Particle Swarm Optimization (indicator based)</td>
+					<td><a href="references/ZC11.bib">ZC11.bib</a></td>
+				</tr>
+				<tr>
+					<td>GDE3</td>
+					<td>jmetal.metaheuristics.gde3</td>
+					<td>GDE3.java</td>
+					<td>Differential evolution</td>
+					<td><a href="references/KL05.bib">KL05.bib</a></td>
+				</tr>
+				<tr>
+					<td>FastPGA</td>
+					<td>jmetal.metaheuristics.fastPGA</td>
+					<td>FastPGA.java</td>
+					<td>Genetic algorithm</td>
+					<td><a href="references/EGL07.bib">EGL07.bib</a></td>
+				</tr>
+				<tr>
+					<td>IBEA</td>
+					<td>jmetal.metaheuristics.ibea</td>
+				    <td>IBEA.java</td>
+					<td>Evolutionary algorithm</td>
+					<td><a href="references/ZK04.bib">ZK04.bib</a></td>
+				</tr>
+				<tr>
+					<td>MOCHC</td>
+					<td>jmetal.metaheuristics.mochc</td>
+				    <td>MOCHC.java</td>
+					<td>CHC</td>
+					<td><a href="references/NAM07.bib">NAM07.bib</a></td>
+				</tr>
+				<tr>
+					<td>MOCell</td>
+					<td>jmetal.metaheuristics.mocell</td>
+					<td>MOCell.java</td>
+					<td>Cellular genetic algorithm</td>
+					<td><a href="references/NDL06.bib">NDL06.bib </a><a href="references/NDL07.bib">NDL07.bib</a></td>
+				</tr>
+				<tr>
+					<td>MOEA/D-DE</td>
+					<td>jmetal.metaheuristics.moead</td>
+					<td>MOEAD.java</td>
+					<td>Decomposition based evolutionar algorithm</td>
+					<td><a href="references/LZ09.bib">LZ09.bib</a></td>
+				</tr>
+				<tr>
+					<td>pMOEA/D-DE</td>
+					<td>jmetal.metaheuristics.moead</td>
+					<td>pMOEAD.java</td>
+					<td>Parallel (multithreaded) version of MOEA/D</td>
+					<td><a href="references/ND10.bib">ND10.bib</a></td>
+				</tr>
+				<tr>
+					<td>MOEA/D-DRA</td>
+					<td>jmetal.metaheuristics.moead</td>
+					<td>MOEAD_DRA.java</td>
+					<td>Decomposition based evolutionar algorithm</td>
+					<td><a href="references/ZLL09.bib">ZLL09.bib</a></td>
+				</tr>
+				<tr>
+					<td>NSGA-II</td>
+					<td>jmetal.metaheuristics.nsgaII</td>
+					<td>NSGAII.java</td>
+					<td>Genetic algorithm</td>
+					<td><a href="references/DPA02.bib">DPA02.bib</a></td>
+				</tr>
+				<tr>
+					<td>ssNSGA-II</td>
+					<td>jmetal.metaheuristics.nsgaII</td>
+					<td>ssNSGAII.java</td>
+					<td>Steady-state version of NSGA-II</td>
+					<td><a href="references/DNL09.bib">DNL09.bib</a></td>
+				</tr>
+				<tr>
+					<td>NSGAIIr</td>
+					<td>jmetal.metaheuristics.nsgaII</td>
+					<td>NSGAIIr.java</td>
+					<td>Random variation operator selection NSGA-II</td>
+					<td><a href="references/NDM13.bib">NDM13.bib</a></td>
+				</tr>
+				<tr>
+					<td>NSGAIIa</td>
+					<td>jmetal.metaheuristics.nsgaII</td>
+					<td>NSGAIIa.java</td>
+					<td>Adaptive variation operator selection NSGA-II</td>
+					<td><a href="references/DNL09.bib">NDM13.bib</a></td>
+				</tr>
+				<tr>
+					<td>pNSGA-II</td>
+					<td>jmetal.metaheuristics.nsgaII</td>
+					<td>pSGAII.java</td>
+					<td>Parallel (multithreaded) version of NSGA-II</td>
+					<td><a href="references/DNL09.bib"> </a></td>
+				</tr>				<tr>
+					<td>OMOPSO</td>
+					<td>jmetal.metaheuristics.omopso</td>
+					<td>OMOPSO.java</td>
+					<td>Particle swarm optimization</td>
+					<td><a href="references/RC05.bib">RC05.bib</a></td>
+			</tr>
+				<tr>
+					<td>PAES</td>
+					<td>jmetal.metaheuristics.paes</td>
+					<td>PAES.java</td>
+					<td>Evolution strategy</td>
+					<td><a href="references/KC99.bib">KC99.bib</a></td>
+				</tr>
+				<tr>
+					<td>SMPSO</td>
+					<td>jmetal.metaheuristics.smpso</td>
+					<td>SMPSO.java</td>
+					<td>Particle swarm optimization</td>
+					<td><a href="references/NDG09.bib">NDG09.bib</a></td>
+				</tr>
+				<tr>
+					<td>pSMPSO</td>
+					<td>jmetal.metaheuristics.smpso</td>
+					<td>SMPSOp.java</td>
+					<td>Parallel (multithreaded) particle swarm optimization</td>
+					<td><a href="references/NDG09.bib"> </a></td>
+				</tr>
+				<tr>
+					<td>SMPSOhv</td>
+					<td>jmetal.metaheuristics.smpso</td>
+					<td>SMPSOhv.java</td>
+					<td>Particle swarm optimization (indicator based)</td>
+					<td><a href="references/NDC13.bib">NDC13.bib</a></td>
+				</tr>
+				<tr>
+					<td>SPEA2</td>
+					<td>jmetal.metaheuristics.spea2</td>
+					<td>SPEA2.java</td>
+					<td>Genetic algorithm</td>
+					<td><a href="references/ZLT01.bib">ZLT01.bib</a></td>
+				</tr>
+					</table>
+				</div>
+			</section>	
+			
+      <section class="col1">
+         <header><h1>Single-objective algorithms</h1></header>
+
+				<div>
+					<table class="fullTable">
+						<tr>
+						<th>Algorithm</th>
+						<th>Package</th>
+						<th>Class</th>
+						<th>Comments</th>
+						</tr>
+				<tr>
+					<td>Genetic Algorithms</td>
+					<td>jmetal.metaheuristics.singleObjective.geneticAlgorithm</td>
+					<td>gGA, ssGA, TSPGA, acGA, scGA</td>
+					<td>Generational, steady-state and cellular GA variants</td>
+				</tr>
+				<tr>
+					<td>PSO</td>
+					<td>jmetal.metaheuristics.singleObjective.particleSwarmOptimization</td>
+					<td>PSO.java</td>
+					<td>Standard PSO</td>
+				</tr>
+				<tr>
+					<td>Differential Evolution</td>
+					<td>jmetal.metaheuristics.singleObjective.differentialEvolution</td>
+					<td>DE.java</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td>Evolution Strategy</td>
+					<td>jmetal.metaheuristics.singleObjective.evolutionStrateg</td>
+					<td>ElitistES, NonElitistES</td>
+					<td>(mu + lambda)ES, (mu, lambda)ES</td>
+				</tr>
+				<tr>
+					<td>CMA-ES</td>
+					<td>jmetal.metaheuristics.singleObjective.cmaes</td>
+					<td>ElitistES, NonElitistES</td>
+					<td>Standard CMA-ES</td>
+				</tr>
+					</table>
+				</div>
+			</section>	
+
+   </article>
+   
+			<div class="clear"> </div>
+		  <hr>
+
+		<footer>
+			<h1> </h1>
+			<div>
+								<!--	<a href="http://creativecommons.org/licenses/LGPL/2.1/"><img src="images/LPGL.png" width="100" alt="licencse" class="float-left" /></a>-->
+
+				<!--			This work is licensed under the <a href="http://creativecommons.org/licenses/LGPL/2.1/">Creative Commons GNU Lesser General Public License</a>		-->
+				<a href="http://validator.w3.org/check?uri=referer"><img class="float_left"
+				src="http://www.w3.org/Icons/valid-xhtml10"
+				alt="Valid XHTML 1.0 Transitional" height="30"  /></a>
+
+				<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3"> <img class="float_left" src="http://jigsaw.w3.org/css-validator/images/vcss"
+				alt="¡CSS Válido!" /> </a>
+
+				<!--© Copyright jMetal. All Rights Reserved-->
+				<a href="http://www.w3.org/html/logo/" target="_blank"> <img class="float_right" src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png"
+				alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics"> </a>
+				<!--
+				<a href="http://validator.w3.org/check?uri=referer"><img class="float_right"
+				src="http://www.w3.org/Icons/valid-xhtml10"
+				alt="Valid XHTML 1.0 Transitional" height="30"  /></a>
+
+				<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3"> <img class="float_right" src="http://jigsaw.w3.org/css-validator/images/vcss"
+				alt="¡CSS Válido!" /> </a>-->
+			</div>
+		</footer>
+	
+	<!-- ... and so on ... -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42147814-1']);
+  _gaq.push(['_setDomainName', 'sourceforge.net']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
+
+
+
